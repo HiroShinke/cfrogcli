@@ -37,6 +37,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - uses: jfrog/setup-jfrog-cli@v1
     - name: Test for cfrog CLI
-      uses: jfrog/setup-jfrog-cli@v1
       run: jfrog --version
